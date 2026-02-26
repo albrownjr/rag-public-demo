@@ -1,0 +1,143 @@
+{
+  "passed": 7,
+  "total": 7,
+  "pass_rate": 1.0,
+  "results": [
+    {
+      "query": "Do you offer 0% financing?",
+      "mode": "offline_rag",
+      "answer": "Hyundai",
+      "confidence": 0.9148100536112906,
+      "citations": [
+        {
+          "id": "2",
+          "text": "Hyundai offers 0% financing for 60 months on selected Sonata models.",
+          "source": "sample_knowledge.csv"
+        },
+        {
+          "id": "1",
+          "text": "Hyundai Sonata 2025 is available in SE, SEL, and Limited trims.",
+          "source": "sample_knowledge.csv"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "query": "What trims are available for the 2025 Sonata?",
+      "mode": "offline_rag",
+      "answer": "SE, SEL, and Limited",
+      "confidence": 0.7931487560272217,
+      "citations": [
+        {
+          "id": "1",
+          "text": "Hyundai Sonata 2025 is available in SE, SEL, and Limited trims.",
+          "source": "sample_knowledge.csv"
+        },
+        {
+          "id": "2",
+          "text": "Hyundai offers 0% financing for 60 months on selected Sonata models.",
+          "source": "sample_knowledge.csv"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "query": "Should I schedule a test drive in advance?",
+      "mode": "offline_rag",
+      "answer": "Customers",
+      "confidence": 0.8309563684160821,
+      "citations": [
+        {
+          "id": "3",
+          "text": "Customers should schedule test drives in advance to ensure availability.",
+          "source": "sample_knowledge.csv"
+        },
+        {
+          "id": "2",
+          "text": "Hyundai offers 0% financing for 60 months on selected Sonata models.",
+          "source": "sample_knowledge.csv"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "query": "What colors does the 2025 Sonata come in?",
+      "mode": "offline_rag_refusal",
+      "reason": "color_question_but_no_color_evidence",
+      "answer": "I don't know based on the provided documents.",
+      "citations": [
+        {
+          "id": "1",
+          "text": "Hyundai Sonata 2025 is available in SE, SEL, and Limited trims.",
+          "source": "sample_knowledge.csv"
+        },
+        {
+          "id": "2",
+          "text": "Hyundai offers 0% financing for 60 months on selected Sonata models.",
+          "source": "sample_knowledge.csv"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "query": "Does the Sonata have a panoramic roof?",
+      "mode": "offline_rag_refusal",
+      "reason": "low_confidence",
+      "answer": "I don't know based on the provided documents.",
+      "confidence": 0.03944751247763634,
+      "citations": [
+        {
+          "id": "1",
+          "text": "Hyundai Sonata 2025 is available in SE, SEL, and Limited trims.",
+          "source": "sample_knowledge.csv"
+        },
+        {
+          "id": "2",
+          "text": "Hyundai offers 0% financing for 60 months on selected Sonata models.",
+          "source": "sample_knowledge.csv"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "query": "What is the towing capacity of the 2025 Sonata?",
+      "mode": "offline_rag_refusal",
+      "reason": "low_confidence",
+      "answer": "I don't know based on the provided documents.",
+      "confidence": 0.11437127739191055,
+      "citations": [
+        {
+          "id": "1",
+          "text": "Hyundai Sonata 2025 is available in SE, SEL, and Limited trims.",
+          "source": "sample_knowledge.csv"
+        },
+        {
+          "id": "2",
+          "text": "Hyundai offers 0% financing for 60 months on selected Sonata models.",
+          "source": "sample_knowledge.csv"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "query": "Is there a hybrid Sonata option mentioned here?",
+      "mode": "offline_rag_refusal",
+      "reason": "low_confidence",
+      "answer": "I don't know based on the provided documents.",
+      "confidence": 0.0465499646961689,
+      "citations": [
+        {
+          "id": "1",
+          "text": "Hyundai Sonata 2025 is available in SE, SEL, and Limited trims.",
+          "source": "sample_knowledge.csv"
+        },
+        {
+          "id": "2",
+          "text": "Hyundai offers 0% financing for 60 months on selected Sonata models.",
+          "source": "sample_knowledge.csv"
+        }
+      ],
+      "pass": true
+    }
+  ]
+}
