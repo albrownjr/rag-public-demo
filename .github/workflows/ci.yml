@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: ["main", "master"]
+    branches: ["main"]
   pull_request:
 
 jobs:
@@ -21,7 +21,6 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install chromadb sentence-transformers pandas transformers torch
 
       - name: Run ingestion (build vector DB)
         run: |
